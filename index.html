@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEME - Envio de Documentos</title>
+    <title>SEME - Envio de Atestado Médico</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,8 +40,8 @@
                     </svg>
                 </div>
                 <div>
-                    <h2>Envio de Documentos para Processos</h2>
-                    <p>Preencha os dados abaixo para enviar seus documentos</p>
+                    <h2>Envio de Atestado Médico</h2>
+                    <p>Preencha os dados abaixo para enviar seu atestado à Secretaria e ao seu Departamento ou Unidade Escolar</p>
                 </div>
             </div>
 
@@ -50,10 +50,143 @@
                 <div class="form-grid">
 
                     <div class="form-section">
-                        <h3 class="section-title">Dados do Processo</h3>
+                        <h3 class="section-title">Dados do Atestado</h3>
 
                         <div class="field-group">
-                            <label for="numprocesso">Nº Processo</label>
+                            <label for="nome_escola">Unidade Escolar</label>
+                            <select name="nome_escola" id="nome_escola" required>
+                                <option value="">Selecione o unidade escolar</option>
+                              <option>ACHILLES ALMEIDA BARRETO (E. M. Prof.)</option>
+                              <option>AGRISA (E. M.)</option>
+                              <option>ALFREDINA OLIVEIRA FRANCESCONI (E. M. Prof.ª)</option>
+                              <option>ALFREDO CASTRO (E. M.)</option>
+                              <option>ALITTA MARIA DO VALLE (E. M. Prof.ª)</option>
+                              <option>AMÉLIA FERREIRA (E. M. Prof.ª)</option>
+                              <option>AMENA MAYALL (E.M. Prof.ª)</option>
+                              <option>AMÉRICA DOS ANJOS MONICA (E. M.)</option>
+                              <option>ANA PEREIRA GONÇALVES (E. M. E. I. Prof.ª)</option>
+                              <option>ANGELIM (E. E. Mz.)</option>
+                              <option>ANITA TEIXEIRA DA SILVA (E.M. E.I. Prof.ª)</option>
+                              <option>ANTONIO DA CUNHA AZEVEDO (E. M.)</option>
+                              <option>ARAÇÁ (E. M.)</option>
+                              <option>ARLETE ROSA CASTANHO (E. M.)</option>
+                              <option>Associação de Pais e Amigos dos Excepcionais (APAE)</option>
+                              <option>CARLOS ALBERTO GOMES DE CARVALHO (E. M. Prof.)</option>
+                              <option>CATHARINA DA SILVEIRA CORDEIRO (E. M . Prof.ª)</option>
+                              <option>CECILIA NOGUEIRA MACHADO GUIA (E. M. Prof.ª)</option>
+                              <option>CILÉA MARIA BARRETO (E. M. Prof.ª)</option>
+                              <option>CLADYR DA ROCHA MENDES (E. M.E.I.)</option>
+                              <option>CLÁUDIA MUZIO FREITAS DE OLIVEIRA (E. M. Prof.ª)</option>
+                              <option>CLEUSA GUIMARÃES FARIA BRAGA (E.M. E. I. Prof.ª)</option>
+                              <option>DALCY BARROSO PILLAR (E. M. E. I. Prof.ª)</option>
+                              <option>DEMERVAL ALVES RANGEL (E. M.)</option>
+                              <option>DEODORO AZEVEDO (E. M.)</option>
+                              <option>DOMINGOS GOUVÊA (E. M.)</option>
+                              <option>EDILSON DUARTE (E. M. Prof.)</option>
+                              <option>EDITH CASTRO DOS SANTOS (E. M.)</option>
+                              <option>ELENICE MARTINS (Creche E. M. Prof.ª)</option>
+                              <option>ELENITA FERREIRA DOS SANTOS ABREU (E. M. E.I. Prof.ª)</option>
+                              <option>ELICÉA DA SILVEIRA (E. M. Prof.ª)</option>
+                              <option>ELZA MARIA SANTA ROSA BERNARDO (Colégio M. Prof.ª)</option>
+                              <option>ETELVINA SANTANA DA FONSECA (E. M.)</option>
+                              <option>EVALDO SALLES (E. M.)</option>
+                              <option>FRANCISCA NAZARETH DE SOUZA (E. E. Mz.)</option>
+                              <option>FRANCISCO FRANCO (E.M.)</option>
+                              <option>IZABEL DOS SANTOS MACHADO (E.M.Prof.ª)</option>
+                              <option>JANAÍNA TELES MARTINS (E.M.E.I. Profª)</option>
+                              <option>JOÃO BESSA TEIXEIRA (E. M.)</option>
+                              <option>JOÃO EVANGELISTA DOS SANTOS (E. M.)</option>
+                              <option>JOÃO ROCHA (E. M.)</option>
+                              <option>JOÃO TRAJANO BANDEIRA CAIXEIRO (E. M. E. I. Prof.)</option>
+                              <option>JOSÉ BONIFÁCIO FERREIRA NOVELLINO (E. M.)</option>
+                              <option>JOSÉ FRANCISCO DA SILVEIRA JÚNIOR (E. M. Prof.)</option>
+                              <option>JUSTINIANO DE SOUZA (E. M.)</option>
+                              <option>LAIR DIAS GAGO PEREIRA (E. M. Prof.ª)</option>
+                              <option>LEAQUIM SCHUINDT (E. M. Vereador)</option>
+                              <option>LEOMARI GARCIA BARRETO (E. M. Prof.ª)</option>
+                              <option>LERINÉA FIGUEIREDO (E. M. Prof.ª)</option>
+                              <option>LUCELÉA RODRIGUES DA COSTA (E. M. Prof.ª)</option>
+                              <option>MANOEL MENDES DE SOUZA (E. M.)</option>
+                              <option>MÁRCIA FRANCESCONI PEREIRA (E. M. Prof.ª)</option>
+                              <option>MARIA AMÁLIA DOS SANTOS SILVEIRA (C. E. M. Prof.ª)</option>
+                              <option>MARIA APARECIDA DE AZEVEDO GALVÃO (CENAP Profª)</option>
+                              <option>MARIA DARIA SALDANHA (E. M.)</option>
+                              <option>MARIA DUTRA DA SILVEIRA (E.M.E.I)</option>
+                              <option>MARIA EMILIA DOS SANTOS CASTRO (Creche E. M.)</option>
+                              <option>MARIA HELENA BELLO DA COSTA (E.M.)</option>
+                              <option>MARIA JOSÉ BARROSO (E. M. Prof.ª)</option>
+                              <option>MARIA LEONÍDIA PARENTES FORTES MARTINS PINHEIRO (Creche Municipal)</option>
+                              <option>MARIA QUITÉRIA DA COSTA RIBEIRO (Creche M. Prof.ª)</option>
+                              <option>MARIA SALVADORA SILVA (E. M. Prof.ª)</option>
+                              <option>MARÍLIA DE TEVES MORENO (Creche E. M. Prof.ª)</option>
+                              <option>MARÍLIA PLAISANT (E. M. Prof.ª)</option>
+                              <option>MARLI CAPP (Centro Educacional M. Prof.ª)</option>
+                              <option>NEUSA AGUALUSA DA COSTA (E.M.E.I)</option>
+                              <option>NILO BATISTA (Escola Agrícola Municipal)</option>
+                              <option>OSWALDO SANTA ROSA (E. M. Prof.)</option>
+                              <option>PALMIRA BESSA DE FIGUEIREDO (E. M.)</option>
+                              <option>PATRÍCIA AZEVEDO DE ALMEIDA (E. M. Profª.)</option>
+                              <option>PAULO BURLE (E. M.)</option>
+                              <option>PEDRO JOTHA (E. M.)</option>
+                              <option>POMAR (E.M.E. I. do)</option>
+                              <option>RENATO AZEVEDO (E. M. Prof.)</option>
+                              <option>ROBINSON CARVALHO DE AZEVEDO (E. M.)</option>
+                              <option>RUI BARBOSA (Colégio Municipal)</option>
+                              <option>RUI CAPDEVILLE (E. M. Maestro)</option>
+                              <option>TALITA HERNANDES PERELLÓ (E. M.)</option>
+                              <option>TEIXEIRA E SOUZA (E. E. Mz.)</option>
+                              <option>THEMIRA PALMER (E. M.)</option>
+                              <option>TIO COTIAS (E. M. E.I.)</option>
+                              <option>TOSANA (E. E. Mz.)</option>
+                              <option>VOVO CINHA (E. M.E.I)</option>
+                              <option>VOVO OLIVIA (E. M.E. I.)</option>
+                              <option>WALDEMIRA TERESA DE JESUS (E. M.)</option>
+                              <option>WANDA M.ª NOGUEIRA GONÇALVES (Creche E. M. Prof.ª)</option>
+                              <option>WANDA PEREIRA ROQUE (E. M. Prof.ª)</option>
+                              <option>WARLEY STUDART (CENAP)</option>
+                              <option>YONE NOGUEIRA (E. M.E. I. Prof.ª)</option>
+                              <option>ZÉLIO JOTHA (E. M. Prof.)</option> 
+                            </select>
+                            
+                        </div>
+
+                        <div class="field-group">
+                            <label for="email">E-mail da Unidade Escolar</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                readonly
+                                placeholder="Será preenchido automaticamente">
+                        </div>
+
+                        
+                        <div class="field-group">
+                            <label for="documentos">Arquivos PDF</label>
+                            <input
+                                type="file"
+                                id="documentos"
+                                name="documentos"
+                                accept="application/pdf"
+                                multiple
+                                required>
+
+                            <small>
+                                Você pode selecionar vários arquivos PDF ao mesmo tempo.
+                            </small>
+                        </div>
+
+                        <div id="listaArquivos" class="lista-arquivos"></div>
+                    </div>
+
+
+
+                    
+                    <div class="form-section">
+                        <h3 class="section-title">Dados Pessoais</h3>
+
+                        <div class="field-group">
+                            <label for="numprocesso">Nº Processo (Obrigatório para afastamento superior a 3 dias)</label>
                             <input
                                 type="text"
                                 id="numprocesso"
@@ -107,38 +240,6 @@
                         </div>
                     </div>
 
-                    <div class="form-section">
-                        <h3 class="section-title">Dados do Atendimento</h3>
-
-                        <div class="field-group">
-                            <label for="tipo_atendimento">Tipo</label>
-                            <select name="tipo_atendimento" id="tipo_atendimento" required>
-                                <option value="">Selecione o tipo do processo</option>
-                                <option>LICENÇA MÉDICA</option>
-                                <option>READAPTAÇÃO</option>
-                                <option>REDUÇÃO DE CARGA HORÁRIA</option>
-                                <option>PERMUTA</option>
-                                <option>OUTROS</option>
-                            </select>
-                        </div>
-
-                        <div class="field-group">
-                            <label for="documentos">Arquivos PDF</label>
-                            <input
-                                type="file"
-                                id="documentos"
-                                name="documentos"
-                                accept="application/pdf"
-                                multiple
-                                required>
-
-                            <small>
-                                Você pode selecionar vários arquivos PDF ao mesmo tempo.
-                            </small>
-                        </div>
-
-                        <div id="listaArquivos" class="lista-arquivos"></div>
-                    </div>
 
                 </div>
 
