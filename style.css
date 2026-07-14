@@ -257,13 +257,15 @@ main {
 }
 
 /* ── FORM (Carregamento) ── */
-form#formAtendimento{
-    background: rgba(255,255,255,.94);
+form#formCarregaDocumentos {
+    background: rgba(255, 255, 255, .94);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: var(--radius-card);
     box-shadow: var(--shadow-card);
     overflow: hidden;
 }
+
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -353,8 +355,8 @@ form#formAtendimento{
     background: #f8fafc;
 }
 
-/* botão Agendar */
-button[type="submit"]#btnAgendar {
+/* botão carregar */
+button[type="submit"]#btnCarregar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -372,9 +374,10 @@ button[type="submit"]#btnAgendar {
     font-weight: 700;
     cursor: pointer;
     transition: transform var(--transition), box-shadow var(--transition), opacity var(--transition);
-    box-shadow: 0 4px 18px rgba(9,117,181,.30);
+    box-shadow: 0 4px 18px rgba(9, 117, 181, .30);
 }
-button[type="submit"]#btnAgendar svg {
+
+button[type="submit"]#btnCarregar svg {
     width: 18px;
     height: 18px;
     stroke: #fff;
@@ -385,12 +388,12 @@ button[type="submit"]#btnAgendar svg {
     flex-shrink: 0;
 }
 
-button[type="submit"]#btnAgendar:hover:not(:disabled) {
+button[type="submit"]#btnCarregar:hover:not(:disabled) {
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(9, 117, 181, .40);
 }
 
-button[type="submit"]#btnAgendar:disabled {
+button[type="submit"]#btnCarregar:disabled {
     opacity: .4;
     cursor: not-allowed;
     transform: none;
