@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const inputArquivos = document.getElementById('documentos');
     const listaArquivos = document.getElementById('listaArquivos');
     const successBox = document.getElementById('successAgenda');
+    const selectEscola = document.getElementById('nome_escola');
+    const emailEscola = document.getElementById('emailEscola');
 
     
    const emailsEscolas = {
@@ -124,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 selectEscola.addEventListener('change', () => {
     emailEscola.value = emailsEscolas[selectEscola.value] || '';
-    validarFormularioAgenda();
+    //validarFormularioAgenda();
 });
 
    
