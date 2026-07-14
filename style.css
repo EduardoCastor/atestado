@@ -356,7 +356,7 @@ form#formCarregaDocumentos {
 }
 
 /* botão carregar */
-button[type="submit"]#btnCarregar {
+button[type="submit"]#btnEnviar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -377,7 +377,7 @@ button[type="submit"]#btnCarregar {
     box-shadow: 0 4px 18px rgba(9, 117, 181, .30);
 }
 
-button[type="submit"]#btnCarregar svg {
+button[type="submit"]#btnEnviar svg {
     width: 18px;
     height: 18px;
     stroke: #fff;
@@ -388,12 +388,12 @@ button[type="submit"]#btnCarregar svg {
     flex-shrink: 0;
 }
 
-button[type="submit"]#btnCarregar:hover:not(:disabled) {
+button[type="submit"]#btnEnviar:hover:not(:disabled) {
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(9, 117, 181, .40);
 }
 
-button[type="submit"]#btnCarregar:disabled {
+button[type="submit"]#btnEnviar:disabled {
     opacity: .4;
     cursor: not-allowed;
     transform: none;
