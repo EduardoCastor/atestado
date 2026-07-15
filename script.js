@@ -188,13 +188,18 @@ selectEscola.addEventListener('change', () => {
             const formData = new FormData();
 
             // CAMPOS DO FORMULÁRIO
+            formData.append('nome_escola', document.getElementById('nome_escola').value);
+            formData.append('emailEscola', document.getElementById('emailEscola').value);
+            
+            formData.append('qtdeDias', document.getElementById('qtdeDias').value);
             formData.append('numprocesso', document.getElementById('numprocesso').value);
+            
             formData.append('nome', document.getElementById('nome').value);
             formData.append('celular', document.getElementById('celular').value);
             formData.append('cpf', document.getElementById('cpf').value);
-            formData.append('email', document.getElementById('email').value);
-            formData.append('tipo_atendimento', document.getElementById('tipo_atendimento').value);
+            formData.append('emailServidor', document.getElementById('emailServidor').value);
 
+           
             // ARQUIVOS
             arquivos.forEach(file => {
                 formData.append('documentos', file);
