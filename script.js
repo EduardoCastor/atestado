@@ -165,6 +165,19 @@ selectEscola.addEventListener('change', () => {
 
         e.preventDefault();
 
+         const dias = Number(document.getElementById("qtdeDias").value);
+         const processo = document.getElementById("numprocesso").value.trim();
+         
+         if (dias > 3 && processo === "") {
+         
+             alert("Para afastamentos superiores a 3 dias é obrigatório informar o número do processo.");
+         
+             document.getElementById("numprocesso").focus();
+         
+             return;
+         
+         }       
+       
         const arquivos = Array.from(inputArquivos.files);
 
         if (arquivos.length === 0) {
@@ -252,38 +265,30 @@ selectEscola.addEventListener('change', () => {
 
 });
 
-// ======================================================
-// Nº do processo obrigatório para afastamentos > 3 dias
-// ======================================================
+// =====================================
+// Nº do processo obrigatório (>3 dias)
+// =====================================
 
 const campoDias = document.getElementById("qtdeDias");
 const campoProcesso = document.getElementById("numprocesso");
 
-function validarProcessoObrigatorio() {
-    const dias = parseInt(campoDias.value, 10);
+function validarProcesso() {
 
-    if (!isNaN(dias) && dias > 3) {
+    const dias = Number(campoDias.value);
+
+    if (dias > 3) {
+
         campoProcesso.required = true;
-        campoProcesso.setCustomValidity(
-            "Informe o nº do processo para afastamentos superiores a 3 dias."
-        );
+
     } else {
+
         campoProcesso.required = false;
         campoProcesso.setCustomValidity("");
     }
+
 }
 
-// Verifica sempre que alterar a quantidade de dias
-campoDias.addEventListener("input", validarProcessoObrigatorio);
+campoDias.addEventListener("input", validarProcesso);
+campoDias.addEventListener("change", validarProcesso);
 
-// Remove a mensagem de erro quando o usuário preencher o processo
-campoProcesso.addEventListener("input", function () {
-    if (campoProcesso.value.trim() !== "") {
-        campoProcesso.setCustomValidity("");
-    } else {
-        validarProcessoObrigatorio();
-    }
-});
-
-// Executa na carga da página
-validarProcessoObrigatorio();
+validarProcesso();
