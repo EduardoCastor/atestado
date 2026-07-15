@@ -215,10 +215,12 @@
                                 <small>(Acima de 3 dias é necessário informar o nº do processo)</small>
                             </label>
                             <input
-                                type="text"
+                                type="number"
                                 id="qtdeDias"
                                 name="qtdeDias"
-                                placeholder="Digite número maior que 0 (zero)"
+                                min="1"
+                                step="1"
+                                placeholder="Digite o número de dias"
                                 required>
                         </div>
                         
