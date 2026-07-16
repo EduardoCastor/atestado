@@ -5,7 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // URL DO WEBHOOK N8N
-    const WEBHOOK_URL = 'https://n8n.srv1352561.hstgr.cloud/webhook/atestados';
+    const WEBHOOK_URL = 'https://n8n.srv1352561.hstgr.cloud/webhook-test/atestados';
 
     // ELEMENTOS
     const form = document.getElementById('formCarregaDocumentos');
